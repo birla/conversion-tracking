@@ -16,12 +16,13 @@
 			_log = w.debug //using Bel Alman's debug.js
 			// _ef = function(){},
 			// _log = {
-			// 	log: _ef,
-			// 	debug: _ef,
-			// 	group: _ef,
-			// 	groupEnd: _ef,
-			// 	warn: _ef,
-			// 	error: _ef
+				// setLevel: _ef,
+				// log: _ef,
+				// debug: _ef,
+				// group: _ef,
+				// groupEnd: _ef,
+				// warn: _ef,
+				// error: _ef
 			// }
 			;
 
@@ -30,10 +31,6 @@
 		/* helpers */
 		function is_undef(val) {
 			return typeof val === 'undefined';
-		}
-
-		function is_null(val) {
-			return val === null;
 		}
 
 		function is_nun(val) {
@@ -101,7 +98,7 @@
 					break;
 				}
 
-				// clearBacklog();
+				clearBacklog();
 
 				//only when ready
 				if(_state !== 2){
